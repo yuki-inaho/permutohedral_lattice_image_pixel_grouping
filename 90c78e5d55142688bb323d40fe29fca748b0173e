@@ -1,0 +1,9 @@
+作業記録 (2026-09-27, ローカル作業):
+- temp/ を作成し .gitignore に追加。元アーカイブ・チャット記録・ローカル再実行ログは temp/ に退避し非追跡。
+- permutohedral-lab-0.2.0.tar.zst をリポジトリ直下に展開（MANIFEST.sha256 の .gitignore ダイジェストを更新）。
+- uv 0.9.7 -> 0.12.19 に更新（pyproject の required-version >=0.10.0）。uv lock / uv sync --locked --all-groups 成功。
+- nanobind 拡張をビルドし、以下を実行確認: manifest 254 ダイジェスト一致 / C++ cmake+ctest 合格 / pytest 129 passed (skip 0) / experiments.toml 22条件が golden と一致 / Notebook 3冊を nanobind バックエンドで全セル実行成功 / CLI・公開API 動作確認。
+- private 情報（ローカル絶対パス等）を staging しないため、再実行で上書きされた reports/・results/ は配布物の原本へ復元。ローカル再実行の出力は temp/ に保持。
+- uv.lock は本リポジトリで新規生成（元配布物には未収録）。
+
+この note は refs/notes/commits に保存され、git push origin refs/notes/commits で共有される。
