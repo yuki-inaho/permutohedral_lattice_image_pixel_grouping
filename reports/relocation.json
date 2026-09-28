@@ -1,0 +1,75 @@
+{
+  "candidate_sha256": "d598f933034c421d9cf46ed2fa7f584574440d82005aa8e748d28d9f7638bc54",
+  "started_at_utc": "2026-09-27T11:17:56.170071+00:00",
+  "scope": "Extract candidate into a new path containing spaces; test C++ and Python via explicit C ABI, not nanobind.",
+  "steps": [
+    {
+      "step": "manifest",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "scripts/verify_manifest.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.5889950850000787,
+      "log": "logs/relocation-manifest.txt"
+    },
+    {
+      "step": "cmake-configure",
+      "command": [
+        "cmake",
+        "-S",
+        ".",
+        "-B",
+        "build/native",
+        "-DPERMUTOHEDRAL_BUILD_PYTHON=OFF",
+        "-DPERMUTOHEDRAL_BUILD_TESTS=ON",
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "exit_code": 0,
+      "seconds": 0.17705565100004605,
+      "log": "logs/relocation-cmake-configure.txt"
+    },
+    {
+      "step": "cmake-build",
+      "command": [
+        "cmake",
+        "--build",
+        "build/native",
+        "--config",
+        "Release",
+        "--parallel",
+        "2"
+      ],
+      "exit_code": 0,
+      "seconds": 5.815947311000173,
+      "log": "logs/relocation-cmake-build.txt"
+    },
+    {
+      "step": "ctest",
+      "command": [
+        "ctest",
+        "--test-dir",
+        "build/native",
+        "-V",
+        "--output-on-failure"
+      ],
+      "exit_code": 0,
+      "seconds": 0.04900404299996808,
+      "log": "logs/relocation-ctest.txt"
+    },
+    {
+      "step": "pytest",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-m",
+        "pytest",
+        "--offline-native",
+        "-q"
+      ],
+      "exit_code": 0,
+      "seconds": 5.4758406280000145,
+      "log": "logs/relocation-pytest.txt"
+    }
+  ],
+  "status": "passed"
+}

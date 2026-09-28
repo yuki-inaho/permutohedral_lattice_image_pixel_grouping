@@ -1,0 +1,59 @@
+[build-system]
+requires = ["scikit-build-core==1.1.0", "nanobind==3.1.0"]
+build-backend = "scikit_build_core.build"
+
+[project]
+name = "permutohedral-segmentation"
+version = "0.2.0"
+description = "Permutohedral simplex partitioning and connected-region merging"
+readme = "README.md"
+requires-python = ">=3.11,<3.15"
+license = "MIT AND BSD-3-Clause"
+dependencies = ["numpy>=2.3,<3", "pillow>=12,<13"]
+
+[project.scripts]
+permutohedral = "permutohedral_segmentation.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=9,<10", "pytest-cov>=7,<8", "ruff>=0.14,<1", "mypy>=1.19,<2"]
+notebook = ["jupyterlab>=4.5,<5", "ipykernel>=7,<8", "nbclient>=0.10,<0.11", "nbformat>=5.10,<6"]
+
+[tool.uv]
+required-version = ">=0.10.0"
+# Rebuild after a change to the C++ sources or CMake configuration.
+cache-keys = [{ file = "pyproject.toml" }, { file = "CMakeLists.txt" }, { file = "cpp/**/*.cpp" }, { file = "cpp/**/*.hpp" }, { file = "src/**/*.py" }, { file = "src/**/*.pyi" }, { file = "src/**/data/*" }]
+
+[tool.scikit-build]
+minimum-version = "build-system.requires"
+cmake.version = ">=3.18"
+cmake.build-type = "Release"
+wheel.packages = ["src/permutohedral_segmentation"]
+wheel.license-files = ["LICENSE", "THIRD_PARTY_NOTICES.md", "LICENSES/*"]
+build-dir = "build/{wheel_tag}"
+sdist.include = ["cpp/**", "src/**", "tests/**", "reference/golden/**", "experiments.toml", "CMakeLists.txt", "README.md", "LICENSE", "LICENSES/**", "THIRD_PARTY_NOTICES.md", "pyproject.toml"]
+sdist.exclude = [".venv/**", "build/**", "reports/**", "results/**", "reference/legacy/**", "notebooks/**", "dist/**", ".git/**"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra --strict-markers"
+markers = ["regression: compares full-size examples against the previous implementation"]
+
+[tool.coverage.run]
+source = ["permutohedral_segmentation"]
+omit = ["*/__main__.py", "*/tests/support/*"]
+[tool.coverage.report]
+show_missing = true
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+extend-exclude = ["reference"]
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "B"]
+
+[tool.mypy]
+python_version = "3.11"
+files = ["src/permutohedral_segmentation"]
+check_untyped_defs = true
+no_implicit_optional = true
+warn_unused_ignores = true

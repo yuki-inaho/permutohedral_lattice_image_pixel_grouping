@@ -1,0 +1,98 @@
+[
+  {
+    "variant": "gcc-sanitizers",
+    "started_at_utc": "2026-09-27T11:07:33.031534+00:00",
+    "steps": [
+      {
+        "command": [
+          "cmake",
+          "-S",
+          ".",
+          "-B",
+          "build/gcc-sanitizers",
+          "-DPERMUTOHEDRAL_BUILD_PYTHON=OFF",
+          "-DPERMUTOHEDRAL_BUILD_TESTS=ON",
+          "-DCMAKE_CXX_COMPILER=/usr/bin/g++",
+          "-DCMAKE_BUILD_TYPE=Debug",
+          "-DPERMUTOHEDRAL_SANITIZERS=ON"
+        ],
+        "exit_code": 0,
+        "seconds": 0.20718269300004977,
+        "log": "logs/gcc-sanitizers-0.txt"
+      },
+      {
+        "command": [
+          "cmake",
+          "--build",
+          "build/gcc-sanitizers",
+          "--parallel",
+          "2"
+        ],
+        "exit_code": 0,
+        "seconds": 4.549991155000043,
+        "log": "logs/gcc-sanitizers-1.txt"
+      },
+      {
+        "command": [
+          "ctest",
+          "--test-dir",
+          "build/gcc-sanitizers",
+          "-V",
+          "--output-on-failure"
+        ],
+        "exit_code": 0,
+        "seconds": 0.7001050829999258,
+        "log": "logs/gcc-sanitizers-2.txt"
+      }
+    ],
+    "status": "passed"
+  },
+  {
+    "variant": "clang-release",
+    "started_at_utc": "2026-09-27T11:07:38.489136+00:00",
+    "steps": [
+      {
+        "command": [
+          "cmake",
+          "-S",
+          ".",
+          "-B",
+          "build/clang-release",
+          "-DPERMUTOHEDRAL_BUILD_PYTHON=OFF",
+          "-DPERMUTOHEDRAL_BUILD_TESTS=ON",
+          "-DCMAKE_CXX_COMPILER=/usr/local/swift/usr/bin/clang++",
+          "-DCMAKE_BUILD_TYPE=Release",
+          "-DPERMUTOHEDRAL_SANITIZERS=OFF"
+        ],
+        "exit_code": 0,
+        "seconds": 0.35307549699996343,
+        "log": "logs/clang-release-0.txt"
+      },
+      {
+        "command": [
+          "cmake",
+          "--build",
+          "build/clang-release",
+          "--parallel",
+          "2"
+        ],
+        "exit_code": 0,
+        "seconds": 3.704754616999935,
+        "log": "logs/clang-release-1.txt"
+      },
+      {
+        "command": [
+          "ctest",
+          "--test-dir",
+          "build/clang-release",
+          "-V",
+          "--output-on-failure"
+        ],
+        "exit_code": 0,
+        "seconds": 0.062343179999970744,
+        "log": "logs/clang-release-2.txt"
+      }
+    ],
+    "status": "passed"
+  }
+]

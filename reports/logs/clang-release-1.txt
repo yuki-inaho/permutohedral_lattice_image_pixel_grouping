@@ -1,0 +1,11 @@
+$ cmake --build build/clang-release --parallel 2
+[ 28%] Building CXX object CMakeFiles/permutohedral_core.dir/cpp/src/lattice.cpp.o
+[ 28%] Building CXX object CMakeFiles/permutohedral_core.dir/cpp/src/regions.cpp.o
+[ 42%] Linking CXX static library libpermutohedral_core.a
+[ 42%] Built target permutohedral_core
+[ 57%] Building CXX object CMakeFiles/permutohedral_test_bridge.dir/tests/native/bridge.cpp.o
+[ 71%] Building CXX object CMakeFiles/test_core.dir/tests/native/test_core.cpp.o
+[ 85%] Linking CXX shared library libpermutohedral_test_bridge.so
+[ 85%] Built target permutohedral_test_bridge
+[100%] Linking CXX executable test_core
+[100%] Built target test_core

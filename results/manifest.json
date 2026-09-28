@@ -1,0 +1,712 @@
+{
+  "started_at_utc": "2026-09-27T11:08:53.080950+00:00",
+  "backend": "ctypes-test-adapter (nanobind not validated)",
+  "experiments": [
+    {
+      "id": "peppers_xy_001",
+      "golden_labels_exact": true,
+      "output": "peppers_xy_001",
+      "schema_version": 1,
+      "package_version": "uninstalled-source",
+      "shape": [
+        512,
+        512
+      ],
+      "dtype": "int32",
+      "label_order": "row-major, zero-based, dense",
+      "coordinate_convention": "pixel centers x+0.5,y+0.5; RGB 0..255",
+      "lattice_normalization": "sqrt(2/3)*(D+1)",
+      "lattice": {
+        "mode": "xy",
+        "spatial_scale": 0.01,
+        "color_scale": 0.01
+      },
+      "merge": null,
+      "simplex_count": 72,
+      "component_count": 72,
+      "region_count": 72,
+      "timings_ms": {
+        "features": 1.4075690000936447,
+        "partition": 12.076677999857566,
+        "components_and_merge": 1.8673990000479535,
+        "total": 15.351645999999164
+      },
+      "timing_excludes": "file I/O, rendering, final connectivity verification"
+    },
+    {
+      "id": "peppers_xy_0025",
+      "golden_labels_exact": true,
+      "output": "peppers_xy_0025",
+      "schema_version": 1,
+      "package_version": "uninstalled-source",
+      "shape": [
+        512,
+        512
+      ],
+      "dtype": "int32",
+      "label_order": "row-major, zero-based, dense",
+      "coordinate_convention": "pixel centers x+0.5,y+0.5; RGB 0..255",
+      "lattice_normalization": "sqrt(2/3)*(D+1)",
+      "lattice": {
+        "mode": "xy",
+        "spatial_scale": 0.025,
+        "color_scale": 0.01
+      },
+      "merge": null,
+      "simplex_count": 405,
+      "component_count": 405,
+      "region_count": 405,
+      "timings_ms": {
+        "features": 1.2985180001123808,
+        "partition": 12.314849999938815,
+        "components_and_merge": 1.7887320000227191,
+        "total": 15.402100000073915
+      },
+      "timing_excludes": "file I/O, rendering, final connectivity verification"
+    },
+    {
+      "id": "peppers_xy_005",
+      "golden_labels_exact": true,
+      "output": "peppers_xy_005",
+      "schema_version": 1,
+      "package_version": "uninstalled-source",
+      "shape": [
+        512,
+        512
+      ],
+      "dtype": "int32",
+      "label_order": "row-major, zero-based, dense",
+      "coordinate_convention": "pixel centers x+0.5,y+0.5; RGB 0..255",
+      "lattice_normalization": "sqrt(2/3)*(D+1)",
+      "lattice": {
+        "mode": "xy",
+        "spatial_scale": 0.05,
+        "color_scale": 0.01
+      },
+      "merge": null,
+      "simplex_count": 1590,
+      "component_count": 1590,
+      "region_count": 1590,
+      "timings_ms": {
+        "features": 0.8832849998725578,
+        "partition": 14.057344000093508,
+        "components_and_merge": 1.7973240001083468,
+        "total": 16.737953000074413
+      },
+      "timing_excludes": "file I/O, rendering, final connectivity verification"
+    },
+    {
+      "id": "peppers_rgb_005",
+      "golden_labels_exact": true,
+      "output": "peppers_rgb_005",
+      "schema_version": 1,
+      "package_version": "uninstalled-source",
+      "shape": [
+        512,
+        512
+      ],
+      "dtype": "int32",
+      "label_order": "row-major, zero-based, dense",
+      "coordinate_convention": "pixel centers x+0.5,y+0.5; RGB 0..255",
+      "lattice_normalization": "sqrt(2/3)*(D+1)",
+      "lattice": {
+        "mode": "rgb",
+        "spatial_scale": 0.05,
+        "color_scale": 0.05
+      },
+      "merge": null,
+      "simplex_count": 240,
+      "component_count": 126661,
+      "region_count": 240,
+      "timings_ms": {
+        "features": 1.4780530000280123,
+        "partition": 24.388342999827728,
+        "components_and_merge": 4.673824000064997,
+        "total": 30.540219999920737
+      },
+      "timing_excludes": "file I/O, rendering, final connectivity verification"
+    },
+    {
+      "id": "peppers_rgb_001",
+      "golden_labels_exact": true,
+      "output": "peppers_rgb_001",
+      "schema_version": 1,
+      "package_version": "uninstalled-source",
+      "shape": [
+        512,
+        512
+      ],
+      "dtype": "int32",
+      "label_order": "row-major, zero-based, dense",
+      "coordinate_convention": "pixel centers x+0.5,y+0.5; RGB 0..255",
+      "lattice_normalization": "sqrt(2/3)*(D+1)",
+      "lattice": {
+        "mode": "rgb",
+        "spatial_scale": 0.01,
+        "color_scale": 0.01
+      },
+      "merge": null,
+      "simplex_count": 45,
+      "component_count": 51442,
+      "region_count": 45,
+      "timings_ms": {
+        "features": 1.3824620000377763,
+        "partition": 21.020969000119294,
+        "components_and_merge": 5.049728999892977,
+        "total": 27.453160000050048
+      },
+      "timing_excludes": "file I/O, rendering, final connectivity verification"
+    },
+    {
+      "id": "peppers_xyrgb_005",
+      "golden_labels_exact": true,
+      "output": "peppers_xyrgb_005",
+      "schema_version": 1,
+      "package_version": "uninstalled-source",
+      "shape": [
+        512,
+        512
+      ],
+      "dtype": "int32",
+      "label_order": "row-major, zero-based, dense",
+      "coordinate_convention": "pixel centers x+0.5,y+0.5; RGB 0..255",
+      "lattice_normalization": "sqrt(2/3)*(D+1)",
+      "lattice": {
+        "mode": "xyrgb",
+        "spatial_scale": 0.05,
+        "color_scale": 0.05
+      },
+      "merge": null,
+      "simplex_count": 73883,
+      "component_count": 159857,
+      "region_count": 73883,
+      "timings_ms": {
+        "features": 3.989913000168599,
+        "partition": 73.00104699993426,
+        "components_and_merge": 3.8851589999922,
+        "total": 80.87611900009506
+      },
+      "timing_excludes": "file I/O, rendering, final connectivity verification"
+    },
+    {
+      "id": "peppers_xyrgb_001",
+      "golden_labels_exact": true,
+      "output": "peppers_xyrgb_001",
+      "schema_version": 1,
+      "package_version": "uninstalled-source",
+      "shape": [
+        512,
+        512
+      ],
+      "dtype": "int32",
+      "label_order": "row-major, zero-based, dense",
+      "coordinate_convention": "pixel centers x+0.5,y+0.5; RGB 0..255",
+      "lattice_normalization": "sqrt(2/3)*(D+1)",
+      "lattice": {
+        "mode": "xyrgb",
+        "spatial_scale": 0.01,
+        "color_scale": 0.01
+      },
+      "merge": null,
+      "simplex_count": 5625,
+      "component_count": 82800,
+      "region_count": 5625,
+      "timings_ms": {
+        "features": 6.271917999811194,
+        "partition": 108.85870300012357,
+        "components_and_merge": 8.048637999991115,
+        "total": 123.17925899992588
+      },
+      "timing_excludes": "file I/O, rendering, final connectivity verification"
+    },
+    {
+      "id": "peppers_xyrgb_raw",
+      "golden_labels_exact": true,
+      "output": "peppers_xyrgb_raw",
+      "schema_version": 1,
+      "package_version": "uninstalled-source",
+      "shape": [
+        512,
+        512
+      ],
+      "dtype": "int32",
+      "label_order": "row-major, zero-based, dense",
+      "coordinate_convention": "pixel centers x+0.5,y+0.5; RGB 0..255",
+      "lattice_normalization": "sqrt(2/3)*(D+1)",
+      "lattice": {
+        "mode": "xyrgb",
+        "spatial_scale": 0.025,
+        "color_scale": 0.01
+      },
+      "merge": null,
+      "simplex_count": 16350,
+      "component_count": 90755,
+      "region_count": 16350,
+      "timings_ms": {
+        "features": 2.901744999917355,
+        "partition": 44.298452000020916,
+        "components_and_merge": 5.145580000089467,
+        "total": 52.34577700002774
+      },
+      "timing_excludes": "file I/O, rendering, final connectivity verification"
+    },
+    {
+      "id": "peppers_xyrgb_k100",
+      "golden_labels_exact": true,
+      "output": "peppers_xyrgb_k100",
+      "schema_version": 1,
+      "package_version": "uninstalled-source",
+      "shape": [
+        512,
+        512
+      ],
+      "dtype": "int32",
+      "label_order": "row-major, zero-based, dense",
+      "coordinate_convention": "pixel centers x+0.5,y+0.5; RGB 0..255",
+      "lattice_normalization": "sqrt(2/3)*(D+1)",
+      "lattice": {
+        "mode": "xyrgb",
+        "spatial_scale": 0.025,
+        "color_scale": 0.01
+      },
+      "merge": {
+        "target_regions": 100,
+        "compactness": 0.3,
+        "color_sigma": 48.0
+      },
+      "simplex_count": 16350,
+      "component_count": 90755,
+      "region_count": 100,
+      "timings_ms": {
+        "features": 3.5540600001695566,
+        "partition": 47.32032399988384,
+        "components_and_merge": 783.4613649999937,
+        "total": 834.3357490000471
+      },
+      "timing_excludes": "file I/O, rendering, final connectivity verification"
+    },
+    {
+      "id": "peppers_xyrgb_k300",
+      "golden_labels_exact": true,
+      "output": "peppers_xyrgb_k300",
+      "schema_version": 1,
+      "package_version": "uninstalled-source",
+      "shape": [
+        512,
+        512
+      ],
+      "dtype": "int32",
+      "label_order": "row-major, zero-based, dense",
+      "coordinate_convention": "pixel centers x+0.5,y+0.5; RGB 0..255",
+      "lattice_normalization": "sqrt(2/3)*(D+1)",
+      "lattice": {
+        "mode": "xyrgb",
+        "spatial_scale": 0.025,
+        "color_scale": 0.01
+      },
+      "merge": {
+        "target_regions": 300,
+        "compactness": 0.3,
+        "color_sigma": 48.0
+      },
+      "simplex_count": 16350,
+      "component_count": 90755,
+      "region_count": 300,
+      "timings_ms": {
+        "features": 3.3641990000887745,
+        "partition": 65.06145999992441,
+        "components_and_merge": 1009.8005979998561,
+        "total": 1078.2262569998693
+      },
+      "timing_excludes": "file I/O, rendering, final connectivity verification"
+    },
+    {
+      "id": "peppers_xyrgb_k500",
+      "golden_labels_exact": true,
+      "output": "peppers_xyrgb_k500",
+      "schema_version": 1,
+      "package_version": "uninstalled-source",
+      "shape": [
+        512,
+        512
+      ],
+      "dtype": "int32",
+      "label_order": "row-major, zero-based, dense",
+      "coordinate_convention": "pixel centers x+0.5,y+0.5; RGB 0..255",
+      "lattice_normalization": "sqrt(2/3)*(D+1)",
+      "lattice": {
+        "mode": "xyrgb",
+        "spatial_scale": 0.025,
+        "color_scale": 0.01
+      },
+      "merge": {
+        "target_regions": 500,
+        "compactness": 0.3,
+        "color_sigma": 48.0
+      },
+      "simplex_count": 16350,
+      "component_count": 90755,
+      "region_count": 500,
+      "timings_ms": {
+        "features": 4.0125069999703555,
+        "partition": 49.133313000083945,
+        "components_and_merge": 883.4811199999422,
+        "total": 936.6269399999965
+      },
+      "timing_excludes": "file I/O, rendering, final connectivity verification"
+    },
+    {
+      "id": "cow_xy_001",
+      "golden_labels_exact": true,
+      "output": "cow_xy_001",
+      "schema_version": 1,
+      "package_version": "uninstalled-source",
+      "shape": [
+        235,
+        418
+      ],
+      "dtype": "int32",
+      "label_order": "row-major, zero-based, dense",
+      "coordinate_convention": "pixel centers x+0.5,y+0.5; RGB 0..255",
+      "lattice_normalization": "sqrt(2/3)*(D+1)",
+      "lattice": {
+        "mode": "xy",
+        "spatial_scale": 0.01,
+        "color_scale": 0.01
+      },
+      "merge": null,
+      "simplex_count": 30,
+      "component_count": 30,
+      "region_count": 30,
+      "timings_ms": {
+        "features": 0.39066699991963105,
+        "partition": 4.62213800005884,
+        "components_and_merge": 0.690810000151032,
+        "total": 5.703615000129503
+      },
+      "timing_excludes": "file I/O, rendering, final connectivity verification"
+    },
+    {
+      "id": "cow_xy_0025",
+      "golden_labels_exact": true,
+      "output": "cow_xy_0025",
+      "schema_version": 1,
+      "package_version": "uninstalled-source",
+      "shape": [
+        235,
+        418
+      ],
+      "dtype": "int32",
+      "label_order": "row-major, zero-based, dense",
+      "coordinate_convention": "pixel centers x+0.5,y+0.5; RGB 0..255",
+      "lattice_normalization": "sqrt(2/3)*(D+1)",
+      "lattice": {
+        "mode": "xy",
+        "spatial_scale": 0.025,
+        "color_scale": 0.01
+      },
+      "merge": null,
+      "simplex_count": 168,
+      "component_count": 168,
+      "region_count": 168,
+      "timings_ms": {
+        "features": 0.36499900011222053,
+        "partition": 4.76015100002769,
+        "components_and_merge": 0.7138250000480184,
+        "total": 5.838975000187929
+      },
+      "timing_excludes": "file I/O, rendering, final connectivity verification"
+    },
+    {
+      "id": "cow_xy_005",
+      "golden_labels_exact": true,
+      "output": "cow_xy_005",
+      "schema_version": 1,
+      "package_version": "uninstalled-source",
+      "shape": [
+        235,
+        418
+      ],
+      "dtype": "int32",
+      "label_order": "row-major, zero-based, dense",
+      "coordinate_convention": "pixel centers x+0.5,y+0.5; RGB 0..255",
+      "lattice_normalization": "sqrt(2/3)*(D+1)",
+      "lattice": {
+        "mode": "xy",
+        "spatial_scale": 0.05,
+        "color_scale": 0.01
+      },
+      "merge": null,
+      "simplex_count": 624,
+      "component_count": 624,
+      "region_count": 624,
+      "timings_ms": {
+        "features": 0.3702770000018063,
+        "partition": 4.832408000083888,
+        "components_and_merge": 0.6594439998934831,
+        "total": 5.862128999979177
+      },
+      "timing_excludes": "file I/O, rendering, final connectivity verification"
+    },
+    {
+      "id": "cow_rgb_005",
+      "golden_labels_exact": true,
+      "output": "cow_rgb_005",
+      "schema_version": 1,
+      "package_version": "uninstalled-source",
+      "shape": [
+        235,
+        418
+      ],
+      "dtype": "int32",
+      "label_order": "row-major, zero-based, dense",
+      "coordinate_convention": "pixel centers x+0.5,y+0.5; RGB 0..255",
+      "lattice_normalization": "sqrt(2/3)*(D+1)",
+      "lattice": {
+        "mode": "rgb",
+        "spatial_scale": 0.05,
+        "color_scale": 0.05
+      },
+      "merge": null,
+      "simplex_count": 875,
+      "component_count": 58499,
+      "region_count": 875,
+      "timings_ms": {
+        "features": 0.5080000000816653,
+        "partition": 11.740932000066095,
+        "components_and_merge": 1.7112680000082037,
+        "total": 13.960200000155965
+      },
+      "timing_excludes": "file I/O, rendering, final connectivity verification"
+    },
+    {
+      "id": "cow_rgb_001",
+      "golden_labels_exact": true,
+      "output": "cow_rgb_001",
+      "schema_version": 1,
+      "package_version": "uninstalled-source",
+      "shape": [
+        235,
+        418
+      ],
+      "dtype": "int32",
+      "label_order": "row-major, zero-based, dense",
+      "coordinate_convention": "pixel centers x+0.5,y+0.5; RGB 0..255",
+      "lattice_normalization": "sqrt(2/3)*(D+1)",
+      "lattice": {
+        "mode": "rgb",
+        "spatial_scale": 0.01,
+        "color_scale": 0.01
+      },
+      "merge": null,
+      "simplex_count": 32,
+      "component_count": 10938,
+      "region_count": 32,
+      "timings_ms": {
+        "features": 0.3248689999963972,
+        "partition": 7.6685379999617,
+        "components_and_merge": 1.856492000115395,
+        "total": 9.849899000073492
+      },
+      "timing_excludes": "file I/O, rendering, final connectivity verification"
+    },
+    {
+      "id": "cow_xyrgb_005",
+      "golden_labels_exact": true,
+      "output": "cow_xyrgb_005",
+      "schema_version": 1,
+      "package_version": "uninstalled-source",
+      "shape": [
+        235,
+        418
+      ],
+      "dtype": "int32",
+      "label_order": "row-major, zero-based, dense",
+      "coordinate_convention": "pixel centers x+0.5,y+0.5; RGB 0..255",
+      "lattice_normalization": "sqrt(2/3)*(D+1)",
+      "lattice": {
+        "mode": "xyrgb",
+        "spatial_scale": 0.05,
+        "color_scale": 0.05
+      },
+      "merge": null,
+      "simplex_count": 49740,
+      "component_count": 76516,
+      "region_count": 49740,
+      "timings_ms": {
+        "features": 1.2018349998470512,
+        "partition": 32.40995200008001,
+        "components_and_merge": 1.2015350000638136,
+        "total": 34.813321999990876
+      },
+      "timing_excludes": "file I/O, rendering, final connectivity verification"
+    },
+    {
+      "id": "cow_xyrgb_001",
+      "golden_labels_exact": true,
+      "output": "cow_xyrgb_001",
+      "schema_version": 1,
+      "package_version": "uninstalled-source",
+      "shape": [
+        235,
+        418
+      ],
+      "dtype": "int32",
+      "label_order": "row-major, zero-based, dense",
+      "coordinate_convention": "pixel centers x+0.5,y+0.5; RGB 0..255",
+      "lattice_normalization": "sqrt(2/3)*(D+1)",
+      "lattice": {
+        "mode": "xyrgb",
+        "spatial_scale": 0.01,
+        "color_scale": 0.01
+      },
+      "merge": null,
+      "simplex_count": 2216,
+      "component_count": 24707,
+      "region_count": 2216,
+      "timings_ms": {
+        "features": 1.3554219999605266,
+        "partition": 16.932040000028792,
+        "components_and_merge": 2.2269399999004236,
+        "total": 20.514401999889742
+      },
+      "timing_excludes": "file I/O, rendering, final connectivity verification"
+    },
+    {
+      "id": "cow_xyrgb_raw",
+      "golden_labels_exact": true,
+      "output": "cow_xyrgb_raw",
+      "schema_version": 1,
+      "package_version": "uninstalled-source",
+      "shape": [
+        235,
+        418
+      ],
+      "dtype": "int32",
+      "label_order": "row-major, zero-based, dense",
+      "coordinate_convention": "pixel centers x+0.5,y+0.5; RGB 0..255",
+      "lattice_normalization": "sqrt(2/3)*(D+1)",
+      "lattice": {
+        "mode": "xyrgb",
+        "spatial_scale": 0.025,
+        "color_scale": 0.01
+      },
+      "merge": null,
+      "simplex_count": 6472,
+      "component_count": 26680,
+      "region_count": 6472,
+      "timings_ms": {
+        "features": 1.1700180000389082,
+        "partition": 17.790727999908995,
+        "components_and_merge": 2.022677000013573,
+        "total": 20.983422999961476
+      },
+      "timing_excludes": "file I/O, rendering, final connectivity verification"
+    },
+    {
+      "id": "cow_xyrgb_k100",
+      "golden_labels_exact": true,
+      "output": "cow_xyrgb_k100",
+      "schema_version": 1,
+      "package_version": "uninstalled-source",
+      "shape": [
+        235,
+        418
+      ],
+      "dtype": "int32",
+      "label_order": "row-major, zero-based, dense",
+      "coordinate_convention": "pixel centers x+0.5,y+0.5; RGB 0..255",
+      "lattice_normalization": "sqrt(2/3)*(D+1)",
+      "lattice": {
+        "mode": "xyrgb",
+        "spatial_scale": 0.025,
+        "color_scale": 0.01
+      },
+      "merge": {
+        "target_regions": 100,
+        "compactness": 0.3,
+        "color_sigma": 48.0
+      },
+      "simplex_count": 6472,
+      "component_count": 26680,
+      "region_count": 100,
+      "timings_ms": {
+        "features": 1.267993000055867,
+        "partition": 18.12883699994927,
+        "components_and_merge": 118.40756600008717,
+        "total": 137.8043960000923
+      },
+      "timing_excludes": "file I/O, rendering, final connectivity verification"
+    },
+    {
+      "id": "cow_xyrgb_k300",
+      "golden_labels_exact": true,
+      "output": "cow_xyrgb_k300",
+      "schema_version": 1,
+      "package_version": "uninstalled-source",
+      "shape": [
+        235,
+        418
+      ],
+      "dtype": "int32",
+      "label_order": "row-major, zero-based, dense",
+      "coordinate_convention": "pixel centers x+0.5,y+0.5; RGB 0..255",
+      "lattice_normalization": "sqrt(2/3)*(D+1)",
+      "lattice": {
+        "mode": "xyrgb",
+        "spatial_scale": 0.025,
+        "color_scale": 0.01
+      },
+      "merge": {
+        "target_regions": 300,
+        "compactness": 0.3,
+        "color_sigma": 48.0
+      },
+      "simplex_count": 6472,
+      "component_count": 26680,
+      "region_count": 300,
+      "timings_ms": {
+        "features": 1.0803850000229431,
+        "partition": 17.14512500007004,
+        "components_and_merge": 91.1967529998492,
+        "total": 109.42226299994218
+      },
+      "timing_excludes": "file I/O, rendering, final connectivity verification"
+    },
+    {
+      "id": "cow_xyrgb_k500",
+      "golden_labels_exact": true,
+      "output": "cow_xyrgb_k500",
+      "schema_version": 1,
+      "package_version": "uninstalled-source",
+      "shape": [
+        235,
+        418
+      ],
+      "dtype": "int32",
+      "label_order": "row-major, zero-based, dense",
+      "coordinate_convention": "pixel centers x+0.5,y+0.5; RGB 0..255",
+      "lattice_normalization": "sqrt(2/3)*(D+1)",
+      "lattice": {
+        "mode": "xyrgb",
+        "spatial_scale": 0.025,
+        "color_scale": 0.01
+      },
+      "merge": {
+        "target_regions": 500,
+        "compactness": 0.3,
+        "color_sigma": 48.0
+      },
+      "simplex_count": 6472,
+      "component_count": 26680,
+      "region_count": 500,
+      "timings_ms": {
+        "features": 1.382621999937328,
+        "partition": 19.2247770000904,
+        "components_and_merge": 103.90462400005163,
+        "total": 124.51202300007935
+      },
+      "timing_excludes": "file I/O, rendering, final connectivity verification"
+    }
+  ]
+}

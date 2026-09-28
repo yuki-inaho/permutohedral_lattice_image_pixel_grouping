@@ -1,0 +1,4 @@
+$ /opt/pyvenv/bin/python scripts/run_notebooks.py --offline-native
+01_spatial_partition.ipynb: passed (ctypes-test-adapter (nanobind not validated))
+02_color_and_merge.ipynb: passed (ctypes-test-adapter (nanobind not validated))
+03_geometry_and_measurement.ipynb: passed (ctypes-test-adapter (nanobind not validated))

@@ -1,0 +1,23 @@
+$ /opt/pyvenv/bin/python scripts/reproduce.py --offline-native
+peppers_xy_001: 72 -> 72; exact=True
+peppers_xy_0025: 405 -> 405; exact=True
+peppers_xy_005: 1590 -> 1590; exact=True
+peppers_rgb_005: 240 -> 240; exact=True
+peppers_rgb_001: 45 -> 45; exact=True
+peppers_xyrgb_005: 73883 -> 73883; exact=True
+peppers_xyrgb_001: 5625 -> 5625; exact=True
+peppers_xyrgb_raw: 16350 -> 16350; exact=True
+peppers_xyrgb_k100: 16350 -> 100; exact=True
+peppers_xyrgb_k300: 16350 -> 300; exact=True
+peppers_xyrgb_k500: 16350 -> 500; exact=True
+cow_xy_001: 30 -> 30; exact=True
+cow_xy_0025: 168 -> 168; exact=True
+cow_xy_005: 624 -> 624; exact=True
+cow_rgb_005: 875 -> 875; exact=True
+cow_rgb_001: 32 -> 32; exact=True
+cow_xyrgb_005: 49740 -> 49740; exact=True
+cow_xyrgb_001: 2216 -> 2216; exact=True
+cow_xyrgb_raw: 6472 -> 6472; exact=True
+cow_xyrgb_k100: 6472 -> 100; exact=True
+cow_xyrgb_k300: 6472 -> 300; exact=True
+cow_xyrgb_k500: 6472 -> 500; exact=True

@@ -1,0 +1,2 @@
+$ /opt/pyvenv/bin/python scripts/record_environment.py
+/mnt/data/permutohedral-lab/reports/environment.json

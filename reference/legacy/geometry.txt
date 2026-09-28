@@ -1,0 +1,3 @@
+D=2: 10000 tests passed; max reconstruction error=5.68434e-14
+D=3: 10000 tests passed; max reconstruction error=5.68434e-14
+D=5: 10000 tests passed; max reconstruction error=2.27374e-13

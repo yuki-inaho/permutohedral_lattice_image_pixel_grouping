@@ -1,0 +1,122 @@
+{
+  "backend": "ctypes-test-adapter; nanobind unverified",
+  "steps": [
+    {
+      "step": "native-configure",
+      "started_at_utc": "2026-09-27T11:08:43.515668+00:00",
+      "command": [
+        "cmake",
+        "-S",
+        ".",
+        "-B",
+        "build/native",
+        "-DPERMUTOHEDRAL_BUILD_PYTHON=OFF",
+        "-DPERMUTOHEDRAL_BUILD_TESTS=ON",
+        "-DCMAKE_BUILD_TYPE=Release"
+      ],
+      "exit_code": 0,
+      "seconds": 0.02200678000008338,
+      "log": "logs/native-configure.txt"
+    },
+    {
+      "step": "native-build",
+      "started_at_utc": "2026-09-27T11:08:43.537791+00:00",
+      "command": [
+        "cmake",
+        "--build",
+        "build/native",
+        "--config",
+        "Release",
+        "--parallel",
+        "2"
+      ],
+      "exit_code": 0,
+      "seconds": 3.0994147019998763,
+      "log": "logs/native-build.txt"
+    },
+    {
+      "step": "native-ctest",
+      "started_at_utc": "2026-09-27T11:08:46.637320+00:00",
+      "command": [
+        "ctest",
+        "--test-dir",
+        "build/native",
+        "-C",
+        "Release",
+        "-V",
+        "--output-on-failure"
+      ],
+      "exit_code": 0,
+      "seconds": 0.0472330160000638,
+      "log": "logs/native-ctest.txt"
+    },
+    {
+      "step": "python-compile",
+      "started_at_utc": "2026-09-27T11:08:46.684685+00:00",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-m",
+        "compileall",
+        "-q",
+        "src",
+        "scripts",
+        "tests"
+      ],
+      "exit_code": 0,
+      "seconds": 0.6439083650000157,
+      "log": "logs/python-compile.txt"
+    },
+    {
+      "step": "pytest",
+      "started_at_utc": "2026-09-27T11:08:47.328731+00:00",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "-m",
+        "pytest",
+        "--cov=permutohedral_segmentation",
+        "--cov-report=term-missing",
+        "--cov-report=xml:reports/coverage.xml",
+        "--junitxml=reports/pytest.xml",
+        "--offline-native"
+      ],
+      "exit_code": 0,
+      "seconds": 5.31100124600016,
+      "log": "logs/pytest.txt"
+    },
+    {
+      "step": "reproduce",
+      "started_at_utc": "2026-09-27T11:08:52.639851+00:00",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "scripts/reproduce.py",
+        "--offline-native"
+      ],
+      "exit_code": 0,
+      "seconds": 7.437530155000104,
+      "log": "logs/reproduce.txt"
+    },
+    {
+      "step": "notebooks",
+      "started_at_utc": "2026-09-27T11:09:00.077593+00:00",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "scripts/run_notebooks.py",
+        "--offline-native"
+      ],
+      "exit_code": 0,
+      "seconds": 10.038916255999993,
+      "log": "logs/notebooks.txt"
+    },
+    {
+      "step": "environment",
+      "started_at_utc": "2026-09-27T11:09:10.116645+00:00",
+      "command": [
+        "/opt/pyvenv/bin/python",
+        "scripts/record_environment.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.6610815159999675,
+      "log": "logs/environment.txt"
+    }
+  ]
+}

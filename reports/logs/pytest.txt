@@ -1,0 +1,43 @@
+$ /opt/pyvenv/bin/python -m pytest --cov=permutohedral_segmentation --cov-report=term-missing --cov-report=xml:reports/coverage.xml --junitxml=reports/pytest.xml --offline-native
+============================= test session starts ==============================
+platform linux -- Python 3.13.5, pytest-9.0.2, pluggy-1.6.0
+Backend: ctypes-test-adapter; nanobind NOT validated
+rootdir: /mnt/data/permutohedral-lab
+configfile: pyproject.toml
+testpaths: tests
+plugins: anyio-4.13.0, ddtrace-4.4.0, Faker-40.1.2, asyncio-1.3.0, cov-7.0.0, json-report-1.5.0, metadata-3.1.1
+asyncio: mode=Mode.STRICT, debug=False, asyncio_default_fixture_loop_scope=None, asyncio_default_test_loop_scope=function
+collected 129 items
+
+tests/test_api.py ...................................................... [ 41%]
+................................                                         [ 66%]
+tests/test_io.py .............                                           [ 76%]
+tests/test_nanobind_contract.py ssssssss                                 [ 82%]
+tests/test_regression.py ......................                          [100%]
+
+------ generated xml file: /mnt/data/permutohedral-lab/reports/pytest.xml ------
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.13.5-final-0 ________________
+
+Name                                              Stmts   Miss  Cover   Missing
+-------------------------------------------------------------------------------
+src/permutohedral_segmentation/__init__.py            4      0   100%
+src/permutohedral_segmentation/_validation.py        37      0   100%
+src/permutohedral_segmentation/api.py                71      0   100%
+src/permutohedral_segmentation/cli.py                34      0   100%
+src/permutohedral_segmentation/config.py             36      0   100%
+src/permutohedral_segmentation/datasets.py           11      0   100%
+src/permutohedral_segmentation/features.py           18      0   100%
+src/permutohedral_segmentation/io.py                 46      0   100%
+src/permutohedral_segmentation/visualization.py      37      0   100%
+-------------------------------------------------------------------------------
+TOTAL                                               294      0   100%
+Coverage XML written to file reports/coverage.xml
+=========================== short test summary info ============================
+SKIPPED [1] tests/test_nanobind_contract.py:13: nanobind was not installed; the test-only C ABI cannot validate this contract
+SKIPPED [3] tests/test_nanobind_contract.py:23: nanobind was not installed; the test-only C ABI cannot validate this contract
+SKIPPED [1] tests/test_nanobind_contract.py:28: nanobind was not installed; the test-only C ABI cannot validate this contract
+SKIPPED [1] tests/test_nanobind_contract.py:36: nanobind was not installed; the test-only C ABI cannot validate this contract
+SKIPPED [1] tests/test_nanobind_contract.py:41: nanobind was not installed; the test-only C ABI cannot validate this contract
+SKIPPED [1] tests/test_nanobind_contract.py:47: nanobind was not installed; the test-only C ABI cannot validate this contract
+======================== 121 passed, 8 skipped in 3.55s ========================

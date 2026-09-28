@@ -1,0 +1,10 @@
+$ cmake -S . -B build/native -DPERMUTOHEDRAL_BUILD_PYTHON=OFF -DPERMUTOHEDRAL_BUILD_TESTS=ON -DCMAKE_BUILD_TYPE=Release
+-- The CXX compiler identification is GNU 14.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /mnt/data/_permutohedral_work/relocation test 5ukwwn9r/permutohedral-lab/build/native

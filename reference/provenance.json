@@ -1,0 +1,13 @@
+{
+  "migration_date": "2026-09-27",
+  "source_archive": {
+    "name": "permutohedral_segmentation.zip",
+    "sha256": "702c1fed7a5c8fdd1ac86eaf12b720cc455d69cd9f24e0df68bc0ae4c6ef1b61"
+  },
+  "legacy_cpp_sha256": "2c22db842c73589bcdd0f2e30433dad7b001b2610e8c79d99ed2b7f773b01ffd",
+  "golden_count": 22,
+  "golden_conversion": "Little-endian uint32 row-major .u32 -> shape-preserving int32 .npz. Pixel values are unchanged.",
+  "upstream_locator": "probreg-master/third_party/permutohedral/permutohedral.cpp",
+  "probreg_archive_sha256": "86ed33276127ba10e514a0795963253d329c6ca0b25f72b0170d1fcc9eb44d32",
+  "images": "User-supplied examples retained from the previous experiment. No new image license is granted."
+}

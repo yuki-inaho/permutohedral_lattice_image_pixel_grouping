@@ -1,0 +1,8 @@
+$ cmake --build build/native --config Release --parallel 2
+[ 14%] Building CXX object CMakeFiles/permutohedral_core.dir/cpp/src/lattice.cpp.o
+[ 28%] Linking CXX static library libpermutohedral_core.a
+[ 42%] Built target permutohedral_core
+[ 57%] Linking CXX shared library libpermutohedral_test_bridge.so
+[ 71%] Linking CXX executable test_core
+[ 85%] Built target permutohedral_test_bridge
+[100%] Built target test_core

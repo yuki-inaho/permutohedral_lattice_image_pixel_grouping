@@ -1,0 +1,231 @@
+{
+  "environment": {
+    "cpu": "AMD EPYC 9V74 80-Core Processor",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.41",
+    "compiler": "g++ (Debian 14.2.0-19) 14.2.0",
+    "optimization": "-std=c++17 -O3",
+    "threads": 1
+  },
+  "timing_excludes": [
+    "image I/O",
+    "visualization",
+    "final connectivity verification"
+  ],
+  "results": [
+    {
+      "configuration": "xy_005",
+      "repeats": 5,
+      "warmup": 1,
+      "median_ms": {
+        "partition_ms": 14.565774,
+        "component_split_ms": 1.916144,
+        "postprocessing_ms": 0.307663,
+        "core_total_ms": 16.820978
+      },
+      "runs_ms": [
+        {
+          "partition_ms": 23.224626,
+          "component_split_ms": 2.064908,
+          "postprocessing_ms": 0.322816,
+          "core_total_ms": 25.61235
+        },
+        {
+          "partition_ms": 14.386615,
+          "component_split_ms": 1.927411,
+          "postprocessing_ms": 0.303607,
+          "core_total_ms": 16.617633
+        },
+        {
+          "partition_ms": 14.565774,
+          "component_split_ms": 1.914011,
+          "postprocessing_ms": 0.341193,
+          "core_total_ms": 16.820978
+        },
+        {
+          "partition_ms": 14.303939,
+          "component_split_ms": 1.881903,
+          "postprocessing_ms": 0.284508,
+          "core_total_ms": 16.47035
+        },
+        {
+          "partition_ms": 14.800688,
+          "component_split_ms": 1.916144,
+          "postprocessing_ms": 0.307663,
+          "core_total_ms": 17.024495
+        }
+      ]
+    },
+    {
+      "configuration": "xy_0025",
+      "repeats": 5,
+      "warmup": 1,
+      "median_ms": {
+        "partition_ms": 15.387781,
+        "component_split_ms": 2.031657,
+        "postprocessing_ms": 0.231579,
+        "core_total_ms": 17.6858
+      },
+      "runs_ms": [
+        {
+          "partition_ms": 15.742085,
+          "component_split_ms": 2.084146,
+          "postprocessing_ms": 0.250477,
+          "core_total_ms": 18.076708
+        },
+        {
+          "partition_ms": 14.664994,
+          "component_split_ms": 2.031657,
+          "postprocessing_ms": 0.222095,
+          "core_total_ms": 16.918746
+        },
+        {
+          "partition_ms": 18.6956,
+          "component_split_ms": 1.982924,
+          "postprocessing_ms": 0.227122,
+          "core_total_ms": 20.905646
+        },
+        {
+          "partition_ms": 15.387781,
+          "component_split_ms": 2.06644,
+          "postprocessing_ms": 0.231579,
+          "core_total_ms": 17.6858
+        },
+        {
+          "partition_ms": 14.454076,
+          "component_split_ms": 1.986651,
+          "postprocessing_ms": 0.614184,
+          "core_total_ms": 17.054911
+        }
+      ]
+    },
+    {
+      "configuration": "xy_001",
+      "repeats": 5,
+      "warmup": 1,
+      "median_ms": {
+        "partition_ms": 14.207936,
+        "component_split_ms": 2.185981,
+        "postprocessing_ms": 0.246511,
+        "core_total_ms": 16.584713
+      },
+      "runs_ms": [
+        {
+          "partition_ms": 14.207936,
+          "component_split_ms": 2.416978,
+          "postprocessing_ms": 0.255374,
+          "core_total_ms": 16.880288
+        },
+        {
+          "partition_ms": 14.121976,
+          "component_split_ms": 2.099811,
+          "postprocessing_ms": 0.221553,
+          "core_total_ms": 16.44334
+        },
+        {
+          "partition_ms": 14.439284,
+          "component_split_ms": 2.281544,
+          "postprocessing_ms": 0.24579,
+          "core_total_ms": 16.966618
+        },
+        {
+          "partition_ms": 14.093593,
+          "component_split_ms": 2.185981,
+          "postprocessing_ms": 0.246511,
+          "core_total_ms": 16.526085
+        },
+        {
+          "partition_ms": 14.29766,
+          "component_split_ms": 2.040291,
+          "postprocessing_ms": 0.246762,
+          "core_total_ms": 16.584713
+        }
+      ]
+    },
+    {
+      "configuration": "xyrgb_raw",
+      "repeats": 5,
+      "warmup": 1,
+      "median_ms": {
+        "partition_ms": 47.858925,
+        "component_split_ms": 5.236802,
+        "postprocessing_ms": 0.032138,
+        "core_total_ms": 53.134756
+      },
+      "runs_ms": [
+        {
+          "partition_ms": 52.330035,
+          "component_split_ms": 5.26877,
+          "postprocessing_ms": 0.030526,
+          "core_total_ms": 57.629331
+        },
+        {
+          "partition_ms": 47.08415,
+          "component_split_ms": 5.194889,
+          "postprocessing_ms": 0.031497,
+          "core_total_ms": 52.310536
+        },
+        {
+          "partition_ms": 48.520401,
+          "component_split_ms": 5.604135,
+          "postprocessing_ms": 0.044838,
+          "core_total_ms": 54.169374
+        },
+        {
+          "partition_ms": 47.131761,
+          "component_split_ms": 5.220428,
+          "postprocessing_ms": 0.032138,
+          "core_total_ms": 52.384327
+        },
+        {
+          "partition_ms": 47.858925,
+          "component_split_ms": 5.236802,
+          "postprocessing_ms": 0.039029,
+          "core_total_ms": 53.134756
+        }
+      ]
+    },
+    {
+      "configuration": "xyrgb_k300",
+      "repeats": 5,
+      "warmup": 1,
+      "median_ms": {
+        "partition_ms": 49.271912,
+        "component_split_ms": 5.42124,
+        "postprocessing_ms": 687.690954,
+        "core_total_ms": 742.633822
+      },
+      "runs_ms": [
+        {
+          "partition_ms": 49.957484,
+          "component_split_ms": 5.430814,
+          "postprocessing_ms": 689.510358,
+          "core_total_ms": 744.898656
+        },
+        {
+          "partition_ms": 49.271912,
+          "component_split_ms": 5.670956,
+          "postprocessing_ms": 687.690954,
+          "core_total_ms": 742.633822
+        },
+        {
+          "partition_ms": 50.355333,
+          "component_split_ms": 5.42124,
+          "postprocessing_ms": 614.976512,
+          "core_total_ms": 670.753085
+        },
+        {
+          "partition_ms": 49.220395,
+          "component_split_ms": 5.300318,
+          "postprocessing_ms": 673.710409,
+          "core_total_ms": 728.231122
+        },
+        {
+          "partition_ms": 47.534839,
+          "component_split_ms": 5.269091,
+          "postprocessing_ms": 691.563666,
+          "core_total_ms": 744.367596
+        }
+      ]
+    }
+  ]
+}

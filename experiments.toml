@@ -1,0 +1,77 @@
+schema_version = 1
+images = ["peppers", "cow"]
+
+[[experiments]]
+name = "xy_001"
+mode = "xy"
+spatial_scale = 0.01
+color_scale = 0.01
+
+[[experiments]]
+name = "xy_0025"
+mode = "xy"
+spatial_scale = 0.025
+color_scale = 0.01
+
+[[experiments]]
+name = "xy_005"
+mode = "xy"
+spatial_scale = 0.05
+color_scale = 0.01
+
+[[experiments]]
+name = "rgb_005"
+mode = "rgb"
+spatial_scale = 0.05
+color_scale = 0.05
+
+[[experiments]]
+name = "rgb_001"
+mode = "rgb"
+spatial_scale = 0.01
+color_scale = 0.01
+
+[[experiments]]
+name = "xyrgb_005"
+mode = "xyrgb"
+spatial_scale = 0.05
+color_scale = 0.05
+
+[[experiments]]
+name = "xyrgb_001"
+mode = "xyrgb"
+spatial_scale = 0.01
+color_scale = 0.01
+
+[[experiments]]
+name = "xyrgb_raw"
+mode = "xyrgb"
+spatial_scale = 0.025
+color_scale = 0.01
+
+[[experiments]]
+name = "xyrgb_k100"
+mode = "xyrgb"
+spatial_scale = 0.025
+color_scale = 0.01
+target_regions = 100
+compactness = 0.3
+color_sigma = 48.0
+
+[[experiments]]
+name = "xyrgb_k300"
+mode = "xyrgb"
+spatial_scale = 0.025
+color_scale = 0.01
+target_regions = 300
+compactness = 0.3
+color_sigma = 48.0
+
+[[experiments]]
+name = "xyrgb_k500"
+mode = "xyrgb"
+spatial_scale = 0.025
+color_scale = 0.01
+target_regions = 500
+compactness = 0.3
+color_sigma = 48.0

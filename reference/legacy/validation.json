@@ -1,0 +1,158 @@
+{
+  "all_passed": true,
+  "independent_component_implementation": "skimage.measure.label, connectivity=1, background=-1",
+  "inputs": {
+    "peppers": {
+      "sha256": "a821172d0c330706590e660d00332beef6aa8db33c21e80ea06da943ff69bad1",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "distinct_rgb_values": 252
+    },
+    "cow": {
+      "sha256": "0f0ec475956c10234aa06a5688ebee66b0453ba1920775e162675706d9ce03f9",
+      "shape": [
+        235,
+        418,
+        3
+      ],
+      "distinct_rgb_values": 53151
+    }
+  },
+  "experiments": [
+    {
+      "experiment": "peppers_xy_001",
+      "labels": 72,
+      "independent_4_connected_components": 72,
+      "passed": true
+    },
+    {
+      "experiment": "peppers_xy_0025",
+      "labels": 405,
+      "independent_4_connected_components": 405,
+      "passed": true
+    },
+    {
+      "experiment": "peppers_xy_005",
+      "labels": 1590,
+      "independent_4_connected_components": 1590,
+      "passed": true
+    },
+    {
+      "experiment": "peppers_rgb_005",
+      "labels": 240,
+      "independent_4_connected_components": 126661,
+      "passed": true
+    },
+    {
+      "experiment": "peppers_rgb_001",
+      "labels": 45,
+      "independent_4_connected_components": 51442,
+      "passed": true
+    },
+    {
+      "experiment": "peppers_xyrgb_005",
+      "labels": 73883,
+      "independent_4_connected_components": 159857,
+      "passed": true
+    },
+    {
+      "experiment": "peppers_xyrgb_001",
+      "labels": 5625,
+      "independent_4_connected_components": 82800,
+      "passed": true
+    },
+    {
+      "experiment": "peppers_xyrgb_raw",
+      "labels": 16350,
+      "independent_4_connected_components": 90755,
+      "passed": true
+    },
+    {
+      "experiment": "peppers_xyrgb_k100",
+      "labels": 100,
+      "independent_4_connected_components": 100,
+      "passed": true
+    },
+    {
+      "experiment": "peppers_xyrgb_k300",
+      "labels": 300,
+      "independent_4_connected_components": 300,
+      "passed": true
+    },
+    {
+      "experiment": "peppers_xyrgb_k500",
+      "labels": 500,
+      "independent_4_connected_components": 500,
+      "passed": true
+    },
+    {
+      "experiment": "cow_xy_001",
+      "labels": 30,
+      "independent_4_connected_components": 30,
+      "passed": true
+    },
+    {
+      "experiment": "cow_xy_0025",
+      "labels": 168,
+      "independent_4_connected_components": 168,
+      "passed": true
+    },
+    {
+      "experiment": "cow_xy_005",
+      "labels": 624,
+      "independent_4_connected_components": 624,
+      "passed": true
+    },
+    {
+      "experiment": "cow_rgb_005",
+      "labels": 875,
+      "independent_4_connected_components": 58499,
+      "passed": true
+    },
+    {
+      "experiment": "cow_rgb_001",
+      "labels": 32,
+      "independent_4_connected_components": 10938,
+      "passed": true
+    },
+    {
+      "experiment": "cow_xyrgb_005",
+      "labels": 49740,
+      "independent_4_connected_components": 76516,
+      "passed": true
+    },
+    {
+      "experiment": "cow_xyrgb_001",
+      "labels": 2216,
+      "independent_4_connected_components": 24707,
+      "passed": true
+    },
+    {
+      "experiment": "cow_xyrgb_raw",
+      "labels": 6472,
+      "independent_4_connected_components": 26680,
+      "passed": true
+    },
+    {
+      "experiment": "cow_xyrgb_k100",
+      "labels": 100,
+      "independent_4_connected_components": 100,
+      "passed": true
+    },
+    {
+      "experiment": "cow_xyrgb_k300",
+      "labels": 300,
+      "independent_4_connected_components": 300,
+      "passed": true
+    },
+    {
+      "experiment": "cow_xyrgb_k500",
+      "labels": 500,
+      "independent_4_connected_components": 500,
+      "passed": true
+    }
+  ]
+}

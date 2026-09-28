@@ -1,0 +1,2 @@
+$ /opt/pyvenv/bin/python scripts/verify_manifest.py
+Verified 248 file digests. Additional local files are not checked.

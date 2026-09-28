@@ -1,0 +1,16 @@
+.venv/
+build/
+dist/
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.ipynb_checkpoints/
+*.tar.zst
+*.tar
+outputs/
+temp/

@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "package_version": "uninstalled-source",
+  "shape": [
+    235,
+    418
+  ],
+  "dtype": "int32",
+  "label_order": "row-major, zero-based, dense",
+  "coordinate_convention": "pixel centers x+0.5,y+0.5; RGB 0..255",
+  "lattice_normalization": "sqrt(2/3)*(D+1)",
+  "lattice": {
+    "mode": "xy",
+    "spatial_scale": 0.05,
+    "color_scale": 0.01
+  },
+  "merge": null,
+  "simplex_count": 624,
+  "component_count": 624,
+  "region_count": 624,
+  "timings_ms": {
+    "features": 0.3702770000018063,
+    "partition": 4.832408000083888,
+    "components_and_merge": 0.6594439998934831,
+    "total": 5.862128999979177
+  },
+  "timing_excludes": "file I/O, rendering, final connectivity verification"
+}

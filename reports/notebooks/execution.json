@@ -1,0 +1,23 @@
+{
+  "backend": "ctypes-test-adapter (nanobind not validated)",
+  "runs": [
+    {
+      "notebook": "01_spatial_partition.ipynb",
+      "status": "passed",
+      "seconds": 1.3340699300001688,
+      "code_cells": 4
+    },
+    {
+      "notebook": "02_color_and_merge.ipynb",
+      "status": "passed",
+      "seconds": 2.1596199030000207,
+      "code_cells": 5
+    },
+    {
+      "notebook": "03_geometry_and_measurement.ipynb",
+      "status": "passed",
+      "seconds": 4.672746532000019,
+      "code_cells": 3
+    }
+  ]
+}

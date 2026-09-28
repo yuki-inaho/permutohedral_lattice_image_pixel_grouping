@@ -1,0 +1,31 @@
+$ ctest --test-dir build/clang-release -V --output-on-failure
+Internal ctest changing into directory: /mnt/data/permutohedral-lab/build/clang-release
+UpdateCTestConfiguration  from :/mnt/data/permutohedral-lab/build/clang-release/DartConfiguration.tcl
+UpdateCTestConfiguration  from :/mnt/data/permutohedral-lab/build/clang-release/DartConfiguration.tcl
+Test project /mnt/data/permutohedral-lab/build/clang-release
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 1
+    Start 1: core
+
+1: Test command: /mnt/data/permutohedral-lab/build/clang-release/test_core
+1: Working Directory: /mnt/data/permutohedral-lab/build/clang-release
+1: Test timeout computed to be: 10000000
+1: D=1, 10000 points: 0
+1: D=2, 10000 points: 5.68434e-14
+1: D=3, 10000 points: 5.68434e-14
+1: D=4, 10000 points: 1.13687e-13
+1: D=5, 10000 points: 2.27374e-13
+1: D=6, 10000 points: 2.27374e-13
+1: D=7, 10000 points: 2.27374e-13
+1: D=8, 10000 points: 2.27374e-13
+1: Native validation passed (including 80,000 geometry samples).
+1/1 Test #1: core .............................   Passed    0.05 sec
+
+100% tests passed, 0 tests failed out of 1
+
+Total Test time (real) =   0.05 sec
